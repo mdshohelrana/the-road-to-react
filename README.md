@@ -22,6 +22,7 @@
 
 - ESlint
 - Prettier
+- Js Doc
 - React-dev-tools
 - Redux-dev-tools
 - Postman
