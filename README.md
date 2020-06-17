@@ -5,22 +5,24 @@
 ## Frontend
 
 - React
-- Context-api, Redux,Mobex, or Rxjs as state manegment
-- CSS/React Component style lib
+- Context-api, Redux,Mobx, or Rxjs as state manegment
+- CSS/React Component style lib(`Reactstrap, Material UI, Tailwind, Styled Component`) 
 
 ## Backend
 
-- Node/Express
-- mongosse/MongosDB
+- NextJs/Node/Express
+- mongoose/MongoDB
 - JWT
 
 ## Test Driven
 
-- Jest/React-test-lib
+- Jest/Enzyme/React-testing-lib/Cypress
 
 ## Extentions
 
 - ESlint
+- Prettier
 - React-dev-tools
+- Redux-dev-tools
 - Postman
 - Heroku Cli
