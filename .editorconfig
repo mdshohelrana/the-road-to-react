@@ -1,0 +1,7 @@
+root = true
+
+[{*.js, *.jsx}]
+indent_size = 4
+ij_continuation_indent_size = 4
+ij_javascript_spaces_within_imports = true
+ij_javascript_spaces_within_object_literal_braces = true
