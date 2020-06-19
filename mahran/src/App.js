@@ -1,10 +1,12 @@
 import React from "react";
-import Home from "./Day2/Home";
+import Class_component from "./Day1/Class_compnent";
+import Function_component from "./Day1/Function_component";
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      <Class_component count={0} />
+      <Function_component count={-1} />
     </div>
   );
 }
