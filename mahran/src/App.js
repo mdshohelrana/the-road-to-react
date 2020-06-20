@@ -1,5 +1,5 @@
 import React from "react";
-import Home from "./Day2/Home";
+import Home from "./Day3/Home";
 
 function App() {
   return (
