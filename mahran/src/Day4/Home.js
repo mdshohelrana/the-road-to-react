@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
+import Navbar from "./components/Navbar";
+import Login from "./components/Login";
+import { AuthProvider, AuthContext } from "./AuthContext";
 
-export default function Home() {
+function Home() {
+  const authContext = useContext(AuthContext);
+
   return (
-    <div>
-      <h1>Home page</h1>
+    <div className="container">
+      <Navbar />
+      {authContext.auth.email ? "welcome" : <Login />}
     </div>
   );
 }
+
+function HomeWithStore() {
+  return (
+    <AuthProvider>
+      <Home />
+    </AuthProvider>
+  );
+}
+
+export default HomeWithStore;
