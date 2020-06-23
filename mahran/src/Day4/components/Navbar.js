@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
-import { AuthProvider, AuthContext } from "../AuthContext";
+import { AuthContext } from "../AuthContext";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const authContext = useContext(AuthContext);
@@ -12,9 +13,9 @@ export default function Navbar() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark mt-2 mb-2">
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="#">
           Navbar
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -28,24 +29,23 @@ export default function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <a className="nav-item nav-link " href="#">
+            <Link className="nav-item nav-link " to="/home">
               Home
-            </a>
-            <a className="nav-item nav-link" href="#">
+            </Link>
+            <Link className="nav-item nav-link" to="/feathres">
               Features
-            </a>
-            <a className="nav-item nav-link" href="#">
-              Regiter
-            </a>
-            <a
+            </Link>
+            <Link className="nav-item nav-link" to="/register">
+              Register
+            </Link>
+            <Link
               onClick={logout}
               className="nav-item nav-link active"
-              href="#"
-              tabindex="-1"
+              to="/"
               aria-disabled="true"
             >
               {authContext.auth.email ? "Logout" : "Login"}
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
