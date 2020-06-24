@@ -1,21 +1,15 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import HomeWithStore from "./Day4/Home";
-import Register from "./Day4/components/Register";
+import Class_life_cycle from "./Day5/class_comp_life_cycle/Class_life_cycle";
+import Function_hooks from "./Day5/function_hooks/Function_hooks";
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/login">
-          <HomeWithStore />
-        </Route>
-        <Route exact path="/register">
-          <Register />
-        </Route>
-      </Switch>
-    </Router>
+    <>
+      <Class_life_cycle />
+      <hr />
+      <Function_hooks />
+    </>
   );
 }
 
