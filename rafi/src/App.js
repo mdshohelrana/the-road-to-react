@@ -10,6 +10,7 @@ import UseOfMap from "./Day2/UseOfMap";
 import PropsWithClassContent from "./Day3/PropsWithClassContent";
 import PropsWithFunctionComponent from "./Day3/PropsWithFunctionComponent";
 import DefaultProps from "./Day3/DefaultProps";
+import LifeCycleMountMethod from "./Day5/LifeCycleMountMethod";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <PropsWithClassContent msg='Getting Message with props in class content'/>
       <PropsWithFunctionComponent msg='Getting Message with props in function content'/>
       <DefaultProps />
+      <LifeCycleMountMethod/>
     </div>
 
   );
