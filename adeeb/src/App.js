@@ -1,7 +1,10 @@
 import React from 'react';
 import './App.css';
-
-
+// Day 3 import files
+import DefaultProps from './Day3/Default_props'
+import ClassBaseComponent from './Day3/ClassBaseComponent'
+import FunctionalComponent from './Day3/FunctionalComponent'
+import State from './Day3/State'
 /*
 import NestedElementJSX from "./Day2/NestedElementJSX";
 import RenderListMap from "./Day2/RenderListMap";
@@ -35,8 +38,12 @@ function App() {
     */
 
       // Day 3 exercise code
-
       <div>
+          <DefaultProps />
+          <DefaultProps msg={'eref'}/>
+          <ClassBaseComponent attr = {'class base component '}/>
+          <FunctionalComponent attr={'functional component'} />
+            <State />
       </div>
 
 

@@ -15,13 +15,13 @@ import LifeCycleMountMethod from "./Day5/LifeCycleMountMethod";
 function App() {
   return (
     <div className="App">
-      <ReactHook/>
-      <ClassComponent/>
+      <ReactHook />
+      <ClassComponent />
       <AttrAndProps attr="This is an attribute and you can access me by props"/>
-      <BaseComponent/>
-      <UseOfMap/>
-      <PropsWithClassContent msg='Getting Message with props in class content'/>
-      <PropsWithFunctionComponent msg='Getting Message with props in function content'/>
+      <BaseComponent />
+      <UseOfMap />
+      <PropsWithClassContent msg='Getting Message with props in class content' />
+      <PropsWithFunctionComponent msg='Getting Message with props in function content' />
       <DefaultProps />
       <LifeCycleMountMethod/>
     </div>
